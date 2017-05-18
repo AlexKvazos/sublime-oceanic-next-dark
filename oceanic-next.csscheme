@@ -1,0 +1,194 @@
+@name "Oceanic Dark Next";
+@author "AlexKvazos";
+
+* {
+	activeGuide: rgba(255,255,255,0.4);
+	background: #1A1A1A;
+	caret: #ffffff;
+	foreground: #E3E7E7;
+	guide: rgba(255,255,255,0.2);
+	invisibles: #7E8080;
+	lineHighlight: rgba(255,255,255,0.05);
+	selection: rgba(255,255,255,0.15);
+	stackGuide: rgba(255,255,255,0.4);
+}
+
+comment, punctuation.definition.comment {
+	@name "Comments";
+	foreground: #565757;
+}
+
+variable {
+	@name "Variable";
+	foreground: #FFFFFF;
+}
+
+keyword, storage.type, storage.modifier {
+	@name "Keyword, Storage";
+	foreground: #C594C5;
+}
+
+constant.other.color, punctuation, meta.tag, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution {
+	@name "Operator, Misc";
+	foreground: #5FB3B3;
+}
+
+keyword.operator.module {
+	@name "Modules, Imports & Exports";
+	foreground: #C594C5;
+}
+
+entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter {
+	@name "Tag";
+	foreground: #EB606B;
+}
+
+entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level {
+	@name "Function, Special Method, Block Level";
+	foreground: #6699CC;
+}
+
+support.other.variable, string.other.link {
+	@name "Other Variable, String Link";
+	foreground: #F2777A;
+}
+
+constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit {
+	@name "Number, Constant, Function Argument, Tag Attribute, Embedded";
+	foreground: #F99157;
+}
+
+string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js {
+	@name "String, Symbols, Inherited Class, Markup Heading";
+	foreground: #99C794;
+	fontStyle: none;
+}
+
+entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter {
+	@name "Class, Support";
+	foreground: #FAC863;
+}
+
+entity.name.module.js, variable.import.parameter.js, variable.other.class.js {
+	@name "Sub-methods";
+	foreground: #EC5F67;
+}
+
+variable.language {
+	@name "Language methods";
+	foreground: #EC5F67;
+	fontStyle: italic;
+}
+
+entity.name.method.js {
+	@name "entity.name.method.js";
+	foreground: #D8DEE9;
+}
+
+meta.class-method.js entity.name.function.js, variable.function.constructor {
+	@name "meta.method.js";
+	foreground: #6699CC;
+}
+
+entity.other.attribute-name {
+	@name "Attributes";
+	foreground: #BB80B3;
+}
+
+markup.inserted {
+	@name "Inserted";
+	foreground: #99C794;
+}
+
+markup.deleted {
+	@name "Deleted";
+	foreground: #EC5F67;
+}
+
+markup.changed {
+	@name "Changed";
+	foreground: #BB80B3;
+}
+
+string.regexp {
+	@name "Regular Expressions";
+	foreground: #5FB3B3;
+}
+
+constant.character.escape {
+	@name "Escape Characters";
+	foreground: #5FB3B3;
+}
+
+*url*, *link*, *uri* {
+	@name "URL";
+	fontStyle: underline;
+}
+
+constant.numeric.line-number.find-in-files - match {
+	@name "Search Results Nums";
+	foreground: #AB7967;
+}
+
+entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label) {
+  @name "Entity name";
+  foreground: #6699CC;
+  fontStyle: none;
+}
+
+tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js {
+	@name "Decorators";
+	foreground: #6699CC;
+	fontStyle: italic;
+}
+
+source.js constant.other.object.key.js string.unquoted.label.js {
+	@name "ES7 Bind Operator";
+	foreground: #EC5F67;
+	fontStyle: italic;
+}
+
+source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 8";
+	foreground: #FAC863;
+}
+
+source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 7";
+	foreground: #C594C5;
+}
+
+source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 6";
+	foreground: #D8DEE9;
+}
+
+source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 5";
+	foreground: #6699CC;
+}
+
+source.json meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON kesy - Level 4";
+	foreground: #AB7967;
+}
+
+source.json meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 3";
+	foreground: #EC5f67;
+}
+
+source.json meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 2";
+	foreground: #F99157;
+}
+
+source.json meta meta.structure.dictionary.json string.quoted.double.json - meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta.structure.dictionary.json punctuation.definition.string - meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 1";
+	foreground: #FAC863;
+}
+
+source.json meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta.structure.dictionary.json punctuation.definition.string - meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string {
+	@name "JSON key - Level 0";
+	foreground: #C594C5;
+}
